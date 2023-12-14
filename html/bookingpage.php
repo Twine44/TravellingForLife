@@ -33,29 +33,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $userJson = file_get_contents('users.json');
   $users = json_decode($userJson, true);
 
-  $loggedInUser = $_SESSION['username'];
+  if(isset($_SESSION['username'])){
+    $loggedInUser = $_SESSION['username'];
 
-  foreach ($users as &$user) {
-    if ($user['username'] === $loggedInUser) {
-      $newBooking = array(
-        'location' => $location,
-        'price' => $price * $personCount,
-        'nights' => $nights,
-        'personcount' => $personCount
-      );
-      $user['bookings'][$location] = $newBooking;
-      break;
+    foreach ($users as &$user) {
+      if ($user['username'] === $loggedInUser) {
+        $newBooking = array(
+          'location' => $location,
+          'price' => $price * $personCount,
+          'nights' => $nights,
+          'personcount' => $personCount
+        );
+        $user['bookings'][$location] = $newBooking;
+        break;
+      }
     }
+    if (!$loggedInUser) {
+      error_log('Could not find current user in JSON');
+      exit;
+    }
+  
+    $newUserJson = json_encode($users, JSON_PRETTY_PRINT);
+    file_put_contents('users.json', $newUserJson);
   }
-  if (!$loggedInUser) {
-    error_log('Could not find current user in JSON');
-    exit;
-  }
-
-  $newUserJson = json_encode($users, JSON_PRETTY_PRINT);
-  file_put_contents('users.json', $newUserJson);
 }
-
 
 ?>
 <!DOCTYPE html>
