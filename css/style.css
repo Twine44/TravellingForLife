@@ -1,0 +1,340 @@
+/* Style for all pages */
+
+/* Basic style */
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #ffff;
+
+    font-family: 'Roboto', sans-serif;
+}
+a:link, a:active, a:visited, a:hover{
+    text-decoration: none;
+}
+
+
+
+/* Navbar */
+nav{
+    padding-top:20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#navlinks{
+    display:flex;
+    justify-content: space-around;
+    width:40%;
+    margin: 0;
+    z-index: 20;
+}
+#navlinks li{
+    list-style: none;
+}
+#navlinks li a,#logo{
+    z-index: 20;
+    color: white;
+    font-size: calc(1vw + 1vh);
+}
+#navlinks li a:hover{
+    color: #EBC796!important;
+}
+#nav-line{
+    width: 75%; 
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+.nav-black{
+    color: black!important;
+}
+#current-page{
+    color: #EBC796!important;
+}
+/* Banner */
+#banner{
+    background-image:url('../images/pexels-spencer-davis-4356144.jpg');
+    background-size: cover;
+    height: calc(20vw + 30vh + 5vmin);
+    position: relative;
+}
+ #bannertitle{
+    color: #ffff;
+    font-size: calc(3vw + 3vh);
+    text-align: center;
+    margin-top: calc(8vw + 8vh);
+    text-shadow: 1px 1px 4px #000000;
+    position: relative;
+    z-index: 20;
+ }
+ .blackbox{
+    width: 100%;
+    height: calc(20vw + 30vh + 5vmin);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    z-index: 10;
+    opacity: 0.3;
+ }
+
+ /* Content */
+ .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ #browse-btn{
+    color: #875509;
+    font-size: 25px;
+    border: 2px solid #875509;
+    border-radius: 25px;
+    padding: 10px 60px 10px 60px;
+    margin-top: 30px;
+ }
+ #browse-btn:hover,.form-btn:hover{
+    color: #ffff;
+    background-color: #875509;
+    transition: 0.3s ease-in;
+ }
+ .side-image{
+    width: 400px;
+    height: auto;
+ }
+ #content{
+    margin-top: 100px;
+ }
+ .section-box{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-bottom: 100px;
+ }
+ .section-text{
+    
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    width: 400px;
+ }
+ .section-img img{
+    border-radius: 30px;
+  
+ }
+
+ /* Login/Register */
+ #logreg-title{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+#title-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    width: 100%;
+    height: 90px;
+    background-color: #1c3d52;
+    border-bottom: 15px solid #EBC796;
+}
+form{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    place-items: center;
+}
+form label{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.repassword{
+    margin-right: 70px;
+}
+form input{
+    height: 30px;
+    border-radius: 11px;
+    border: 1px solid black;
+    width: 250px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-left: 18px;
+}
+.long-input{
+    width: 525px;
+}
+#name-input{
+    margin-left: 66px;
+}
+#bday-input{
+    margin-left: 40px;
+}
+#email-input{
+    margin-left: 68px;
+}
+#regbtn-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-bottom: 200px;
+}
+#logbtn-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-bottom: 400px;
+}
+.form-btn{
+    color: #875509;
+    background-color: white;
+    border: 2px solid #875509;
+    border-radius: 25px;
+    padding: 7.2px 48px 7.2px 48px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#signup-text{
+    margin-top: 10px;
+}
+#signup{
+    color: #875509;
+    font-weight: bold;
+}
+#qmark-icon{
+    width: 25px;
+    height: auto;
+    margin-left: 5px;
+}
+#req{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.reginfotext{
+    margin-left: 10px;
+    color: #1c3d52;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+h3 {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-top:10px;
+    font-size: 30px;
+}
+.errortext {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin: 10px 0px;
+    
+  }
+.error-box{
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 70%;
+    background-color: #ff5050;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    place-items: center;
+}
+.successbox{
+    background-color: #0ca90a;
+    width: 60%;
+}
+.successtext{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+ /* Footer */
+footer{
+    display: flex;
+    align-items: center;
+    height: 250px;
+    background-color: #1c3d52;
+    color: white;
+}
+footer div{
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+footer h1{
+    margin-bottom: 15px;
+}
+
+/* Media queries */
+/* For mobile */
+@media screen and (max-width:900px) {
+    .section-box{
+        flex-direction: column;
+        margin-bottom: 100px;
+        gap: 100px;
+    }
+    #second-section{
+        flex-direction: column-reverse;
+    }
+    footer{
+        flex-direction: column;
+        height: auto;
+    }
+    form {
+        justify-content: center;
+        place-items: center;
+    }
+    form label {
+        text-align: center;
+    }
+    form input{
+        margin-top: 10px;
+        padding-left: 20px;
+        margin-left: 20px;
+    }
+    footer div{
+        padding: 0;
+    }
+    .long-input{
+        width: 300px;
+    }
+}
+/* Print styles */
+@media print {
+    footer{
+        flex-direction: column;
+        height: auto;
+        color: black;
+    }
+    footer div{
+        padding: 0;
+    }
+    #bannertitle{
+        color: black;
+        text-shadow: none;
+    }
+    #navlinks li a,#logo{
+        color: black;
+    }
+    #logreg-title{
+        color: black;
+    }
+    
+}

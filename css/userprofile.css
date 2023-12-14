@@ -1,0 +1,296 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  #profile {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 30px;
+  }
+
+  h1 {
+    color: #333;
+    font-size: 28px;
+    margin: 0 0 20px;
+    text-align: center;
+  }
+
+  p {
+    color: #1c3d52;
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  .mainbox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    place-items: center;
+    gap: 50px;
+  }
+
+
+  .userbox{
+    border: 1px solid #55829e;
+    width: 560px;
+    height: 410px;
+    margin-top: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
+    place-items: center;
+    flex-direction: column;
+  }
+  .infogrid {
+    display: grid;
+    grid-template-columns: auto 170px;
+    margin-top: 0px;
+    row-gap: 20px;
+    column-gap: 60px;
+    text-align: right;
+  }
+  .infogrid p {
+    position: relative;
+    padding-bottom: 10px; /* adjust as needed */
+  }
+  .staticinfo {
+    text-align: left;
+    
+  }
+  .staticinfo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 400%;
+    border-bottom: 1px dashed #9e8056;
+  }
+ .logout:link, .logout:active, .logout:visited, .logout:hover{
+    text-decoration: underline    ;
+  }
+  .logout{
+        color: #55829e;
+        text-decoration: underline;
+        font-weight: 400;
+        font-size: 20px;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        color: #1c3d52;
+        font-family: "Roboto", sans-serif;
+  }
+  .btn-box{
+    display: flex;
+  }
+
+  .bookingbox{
+    border: 1px solid #55829e;
+    width: 440px;
+    height: 410px;
+    margin-top: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
+    place-items: center;
+    flex-direction: column;
+    overflow: scroll;
+    position: relative;
+    max-height:100;
+  }
+  .userbookings{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    border-bottom: 1px solid #9e8056;
+    text-align: end;
+    margin-bottom: 20px;
+  }
+  .lefttext{
+    text-align: start;
+    /* font-size: 16px!important; */
+  }
+  .moneytext{
+    color: #9e8056;
+  }
+  #profileForm{
+    flex-direction: column;
+    margin-top: 20px;
+    border: 1px solid #55829e;
+    margin-bottom: 40px;
+    width: 300px;
+    justify-content: center;
+    place-items: center;
+    border-radius: 5px;
+  }
+  .profilebutton {
+    background-color: #1c3d52;
+    color: #ebc796;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .profilebutton:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+  .proflabel{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .profinput{
+    width: 200px;
+  }
+  .delete{
+    margin-top: 20px;
+    color:#ff5050;
+    background: none;
+     border: none;
+      cursor: pointer;
+  }
+  #profileForm input[type="submit"] {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #9e8056;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+#profileForm input[type="submit"]:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+.adminbox{
+  border: 1px solid #55829e;
+  width: 400px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  height: 400px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: start;
+  place-items: center;
+  flex-direction: column;
+  overflow: scroll;
+  position: relative;
+  max-height:100;
+}
+.adminusers{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  place-items: end;
+}
+
+.adminform {
+  display: flex;
+  margin-top: 0px;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+}
+.oneuserdiv{
+  display: flex;
+  gap: 20px;
+}
+.oneusertext {
+  color: #1c3d52;
+  font-size: 18px;
+  margin: 0px;
+}
+.deluser{
+  margin-top: 0px;
+}
+.lastbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+}
+
+@media only screen and (max-width:1800px) {
+  .main-wrapper {
+    width: 80%;
+  }
+  .bookingbox{
+    margin-left: 40px;
+    width: 400px;
+  }
+  .userbox{
+    width: 500px;
+  }
+}
+@media only screen and (max-width:1250px) {
+  .main-wrapper {
+    width: 70%;
+  }
+  .bookingbox{
+    height: 410px;
+    margin-bottom: auto;
+  }
+}
+@media only screen and (max-width:1050px) {
+  .mainbox {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .adminbox{
+    width: 330px;
+  }
+  article {
+    width: 95%;
+    margin-left: 0px;
+  }
+  .bookingbox{
+    height: 400px;
+    margin-left: 0px;
+  }
+  .lastbox{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+  }
+}
+@media only screen and (max-width:700px) {
+ 
+  .bookingbox{
+    width: 350px;
+  }
+  .userbox{
+    width: 400px;
+  }
+  .lastbox{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+  }
+}

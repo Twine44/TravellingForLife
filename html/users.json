@@ -1,0 +1,99 @@
+{
+    "1": {
+        "name": "adss",
+        "birthday": "2023-04-09",
+        "email": "dsdsds@dffdf.dfdf",
+        "username": "qweqwe",
+        "password": "$2y$10$8SbL.iczhENAwjM8F7LqXetAIAFwqmeAWo28JTOD8rtkH3b.7w3kq"
+    },
+    "2": {
+        "name": "admin",
+        "birthday": "2023-04-07",
+        "email": "admin@admin.admin",
+        "username": "admin",
+        "password": "$2y$10$Ah5EHIWKVNUzaO7kDuClA.j5kJpoQUWd45Z3\/bgWG5zRYICBKndn.",
+        "bookings": {
+            "Firenze, Vespucci Villa": {
+                "location": "Firenze, Vespucci Villa",
+                "price": 429000,
+                "nights": "5 nights",
+                "personcount": "1"
+            },
+            "Cairo, Hotel Abdul-Ahim": {
+                "location": "Cairo, Hotel Abdul-Ahim",
+                "price": 597000,
+                "nights": "4 nights",
+                "personcount": "3"
+            },
+            "Honolulu, Waikiki Hotel": {
+                "location": "Honolulu, Waikiki Hotel",
+                "price": 509000,
+                "nights": "5 nights",
+                "personcount": "1"
+            },
+            "Irinyi \u00e9p\u00fclet": {
+                "location": "Irinyi \u00e9p\u00fclet",
+                "price": 0,
+                "nights": "420 nights",
+                "personcount": "1"
+            }
+        }
+    },
+    "3": {
+        "name": "dd",
+        "birthday": "2023-04-25",
+        "email": "fafafa@fff.fff",
+        "username": "Belagomb",
+        "password": "$2y$10$sybv0SVrr8uZ1P.4AdN.Z.hhBE.AiZLa.SaR.8SfqdNUFp3XzdOoC",
+        "bookings": {
+            "Firenze, Vespucci Villa": {
+                "location": "Firenze, Vespucci Villa",
+                "price": 1287000,
+                "nights": "5 nights",
+                "personcount": "3"
+            }
+        }
+    },
+    "4": {
+        "name": "S\u00e1ndor Tibor Guszt\u00e1v\u00f3",
+        "birthday": "2002-05-21",
+        "email": "sandor.tibix@gmail.com",
+        "username": "Twine44",
+        "password": "$2y$10$QHqo4UquuY3LmQLNWxK4PuHpJiaXER.HwCVT2IWiyg3CqWUfX90MK",
+        "bookings": {
+            "Firenze, Vespucci Villa": {
+                "location": "Firenze, Vespucci Villa",
+                "price": 429000,
+                "nights": "5 nights",
+                "personcount": "1"
+            },
+            "Reykjav\u00edk, Aurora Hotel": {
+                "location": "Reykjav\u00edk, Aurora Hotel",
+                "price": 747000,
+                "nights": "3 nights",
+                "personcount": "3"
+            },
+            "Honolulu, Waikiki Hotel": {
+                "location": "Honolulu, Waikiki Hotel",
+                "price": 1527000,
+                "nights": "5 nights",
+                "personcount": "3"
+            }
+        }
+    },
+    "5": {
+        "name": "S\u00e1ndor Tibor",
+        "birthday": "2002-05-22",
+        "email": "sandor.tibix@gmail.com",
+        "username": "Twine",
+        "password": "$2y$10$Sn47IpQRMfJ9owKpQqAfwuZVNgWN\/b56zVZs\/EiBAMfr\/2SfVjVLe",
+        "bookings": {
+            "Firenze, Vespucci Villa": {
+                "location": "Firenze, Vespucci Villa",
+                "price": 1287000,
+                "nights": "5 nights",
+                "personcount": "3"
+            }
+        }
+    }
+}
